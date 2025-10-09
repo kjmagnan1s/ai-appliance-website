@@ -11,8 +11,8 @@ const faqs = [
     answer: "AIppliance Manager finds it for you automatically using the model number. Simply scan the label on your appliance or enter the details manually, and we'll locate the official manual instantly. If we can't download your manual, we will point you to your manufacturer's website where you can download and upload it quickly and easily!",
   },
   {
-    question: "What does this blinking error code mean?",
-    answer: "Just ask the AI. It can cross-reference the code with the manual to give you an exact answer, along with step-by-step troubleshooting instructions.",
+    question: "What kinds of questions can I ask?",
+    answer: "Anything related to repairs and maintenance! If you appliance manual mentions it, our AI will surface that knowledge to you faster than you can open your junk drawer looking for the manual!",
   },
   {
     question: "Is my data private?",
