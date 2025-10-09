@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { MessagesSquare, Video, Home, WifiOff } from "lucide-react";
+import { MessagesSquare, Video, Home, Bell } from "lucide-react";
 
 const features = [
   {
@@ -18,9 +18,9 @@ const features = [
     description: "Organize all your appliances by room, across multiple properties.",
   },
   {
-    icon: WifiOff,
-    title: "Works Offline",
-    description: "Access crucial information even when your internet is down.",
+    icon: Bell,
+    title: "Maintenance Reminders",
+    description: "Get timely alerts for filter changes, cleanings, and regular maintenance tasks.",
   },
 ];
 
