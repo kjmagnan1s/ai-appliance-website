@@ -11,7 +11,7 @@ const Header = () => {
           <img src={logo} alt="AIppliance Manager Logo" className="h-10 w-10 rounded-lg" />
           <span className="text-lg font-bold">AIppliance Manager</span>
         </Link>
-        
+
         <Button size="lg" className="bg-primary hover:bg-primary/90 gap-2">
           <img src={googlePlayIcon} alt="Google Play" className="h-5 w-5" />
           Get on Google Play

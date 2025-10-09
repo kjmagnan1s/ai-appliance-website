@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: "What kinds of questions can I ask?",
-    answer: "Anything related to repairs and maintenance! If you appliance manual mentions it, our AI will surface that knowledge to you faster than you can open your junk drawer looking for the manual!",
+    answer: "Anything related to repairs and maintenance! If your appliance manual mentions it, our AI will surface that knowledge to you faster than you can open your junk drawer looking for the manual!",
   },
   {
     question: "Is my data private?",
