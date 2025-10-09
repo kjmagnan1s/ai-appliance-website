@@ -1,5 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const PrivacyPolicy = () => {
   return (
@@ -7,6 +10,13 @@ const PrivacyPolicy = () => {
       <Header />
       <main className="container px-4 py-20 md:px-6">
         <div className="mx-auto max-w-4xl">
+          <Link to="/">
+            <Button variant="ghost" className="mb-6 gap-2">
+              <ArrowLeft className="h-4 w-4" />
+              Back to Home
+            </Button>
+          </Link>
+          
           <h1 className="mb-8 text-center">Privacy Policy</h1>
           
           <div className="space-y-6 text-muted-foreground">
