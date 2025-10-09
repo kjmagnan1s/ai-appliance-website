@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     question: "How do I find my appliance manual?",
-    answer: "AIppliance Manager finds it for you automatically using the model number. Simply scan the label on your appliance or enter the details manually, and we'll locate the official manual instantly.",
+    answer: "AIppliance Manager finds it for you automatically using the model number. Simply scan the label on your appliance or enter the details manually, and we'll locate the official manual instantly. If we can't download your manual, we will point you to your manufacturer's website where you can download and upload it quickly and easily!",
   },
   {
     question: "What does this blinking error code mean?",
