@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Smartphone } from "lucide-react";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return <footer className="border-t border-border/40 bg-card/30 backdrop-blur-sm">
       <div className="container px-4 py-12 md:px-6">
@@ -17,14 +16,14 @@ const Footer = () => {
             <h3 className="mb-4 text-lg font-bold">Legal</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/privacy-policy" className="text-muted-foreground hover:text-foreground transition-colors">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/terms-of-service" className="text-muted-foreground hover:text-foreground transition-colors">
                   Terms of Service
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
