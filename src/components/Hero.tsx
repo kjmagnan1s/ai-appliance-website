@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Smartphone } from "lucide-react";
+import heroBanner from "@/assets/hero-banner.png";
 
 const Hero = () => {
   return (
@@ -22,16 +23,12 @@ const Hero = () => {
           Get it on Google Play
         </Button>
         
-        <div className="mt-16 relative animate-fade-in" style={{ animationDelay: "0.3s" }}>
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10" />
-          <div className="rounded-2xl bg-card/50 backdrop-blur-sm p-8 shadow-2xl border border-border/50">
-            <div className="aspect-video rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-              <div className="text-center">
-                <Smartphone className="h-20 w-20 mx-auto text-primary/60 mb-4" />
-                <p className="text-muted-foreground">Your appliances, intelligently managed</p>
-              </div>
-            </div>
-          </div>
+        <div className="mt-16 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+          <img 
+            src={heroBanner} 
+            alt="AIppliance Manager app interface showing smart home management" 
+            className="w-full h-auto rounded-2xl shadow-2xl"
+          />
         </div>
       </div>
     </section>
