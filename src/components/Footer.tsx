@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Smartphone } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="border-t border-border/40 bg-card/30 backdrop-blur-sm">
+  return <footer className="border-t border-border/40 bg-card/30 backdrop-blur-sm">
       <div className="container px-4 py-12 md:px-6">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
@@ -31,21 +29,13 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div>
-            <h3 className="mb-4 text-lg font-bold">Get Started</h3>
-            <Button className="w-full bg-primary hover:bg-primary/90 gap-2">
-              <Smartphone className="h-4 w-4" />
-              Get it on Google Play
-            </Button>
-          </div>
+          
         </div>
         
         <div className="mt-8 pt-8 border-t border-border/40 text-center text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} AIppliance Manager. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
