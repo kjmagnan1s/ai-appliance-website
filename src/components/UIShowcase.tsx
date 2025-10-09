@@ -5,7 +5,7 @@ import addImg from "@/assets/screenshot-add.png";
 const screenshots = [
   { src: dashboardImg, alt: "My Home Dashboard", label: "My Home Dashboard" },
   { src: chatImg, alt: "AI Chat Interface", label: "AI Chat" },
-  { src: addImg, alt: "Add Appliance", label: "Appliance Library" },
+  { src: addImg, alt: "Add Appliance", label: "Add Appliances" },
 ];
 
 const UIShowcase = () => {
