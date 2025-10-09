@@ -19,7 +19,7 @@ const features = [
   },
   {
     icon: Bell,
-    title: "Maintenance Reminders",
+    title: "Maintenance Reminders (coming soon!)",
     description: "Get timely alerts for filter changes, cleanings, and regular maintenance tasks.",
   },
 ];
