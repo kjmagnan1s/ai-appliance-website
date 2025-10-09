@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.jpeg";
+import googlePlayIcon from "@/assets/google-play-icon.png";
 
 const Header = () => {
   return (
@@ -10,7 +11,8 @@ const Header = () => {
           <span className="text-lg font-bold">AIppliance Manager</span>
         </div>
         
-        <Button size="lg" className="bg-primary hover:bg-primary/90">
+        <Button size="lg" className="bg-primary hover:bg-primary/90 gap-2">
+          <img src={googlePlayIcon} alt="Google Play" className="h-5 w-5" />
           Get on Google Play
         </Button>
       </div>
