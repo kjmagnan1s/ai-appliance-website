@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Smartphone } from "lucide-react";
 import heroBanner from "@/assets/hero-banner.png";
+import googlePlayIcon from "@/assets/google-play-icon.png";
 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
           className="h-14 px-8 text-lg bg-primary hover:bg-primary/90 animate-fade-in gap-2"
           style={{ animationDelay: "0.2s" }}
         >
-          <Smartphone className="h-5 w-5" />
+          <img src={googlePlayIcon} alt="Google Play" className="h-6 w-6" />
           Get it on Google Play
         </Button>
         
