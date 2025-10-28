@@ -12,9 +12,11 @@ const Header = () => {
           <span className="text-lg font-bold">AIppliance Manager</span>
         </Link>
 
-        <Button size="lg" className="bg-primary hover:bg-primary/90 gap-2">
-          <img src={googlePlayIcon} alt="Google Play" className="h-5 w-5" />
-          Get on Google Play
+        <Button asChild size="lg" className="bg-primary hover:bg-primary/90 gap-2">
+          <a href="https://play.google.com/store/apps/details?id=com.smarthomeai.app" target="_blank" rel="noopener noreferrer">
+            <img src={googlePlayIcon} alt="Google Play" className="h-5 w-5" />
+            Get on Google Play
+          </a>
         </Button>
       </div>
     </header>

@@ -14,13 +14,20 @@ const Hero = () => {
           Instant answers, maintenance tips, and troubleshooting—all powered by AI.
         </p>
         
-        <Button 
-          size="lg" 
+        <Button
+          asChild
+          size="lg"
           className="h-14 px-8 text-lg bg-primary hover:bg-primary/90 animate-fade-in gap-2"
           style={{ animationDelay: "0.2s" }}
         >
-          <img src={googlePlayIcon} alt="Google Play" className="h-6 w-6" />
-          Get it on Google Play
+          <a
+            href="https://play.google.com/store/apps/details?id=com.smarthomeai.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={googlePlayIcon} alt="Google Play" className="h-6 w-6" />
+            Get it on Google Play
+          </a>
         </Button>
         
         <div className="mt-16 animate-fade-in" style={{ animationDelay: "0.3s" }}>
