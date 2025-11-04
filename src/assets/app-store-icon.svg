@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E88E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="115" fill="url(#grad)"/>
+  <g fill="#FFFFFF">
+    <!-- Pencil (left tool) -->
+    <path d="M150 280 L180 180 L195 185 L165 285 Z"/>
+    <path d="M180 180 L185 175 L200 180 L195 185 Z"/>
+
+    <!-- Paintbrush (center tool) -->
+    <path d="M245 165 L260 285 L275 285 L290 165 Z"/>
+    <path d="M240 165 L245 165 L245 155 Q245 145 255 145 T275 145 L275 155 L275 165 L290 165 L290 155 Q290 135 267.5 135 T245 135 L245 155 Z"/>
+
+    <!-- Ruler (right tool) -->
+    <path d="M332 180 L362 280 L347 285 L317 185 Z"/>
+    <path d="M332 180 L327 175 L342 170 L347 175 Z"/>
+
+    <!-- Horizontal line at bottom -->
+    <rect x="140" y="295" width="232" height="12" rx="6"/>
+  </g>
+</svg>
