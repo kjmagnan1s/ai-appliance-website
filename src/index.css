@@ -103,3 +103,30 @@ All colors MUST be HSL.
     @apply text-xl md:text-2xl;
   }
 }
+
+/* Custom animations for the Hero component */
+@keyframes pan-image {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-pan-image {
+  animation: pan-image 60s linear infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
