@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.jpeg";
 import googlePlayIcon from "@/assets/google-play-icon.png";
+import appStoreIcon from "@/assets/app-store-icon.svg";
 
 const Header = () => {
   return (
@@ -12,12 +13,23 @@ const Header = () => {
           <span className="text-lg font-bold">AIppliance Manager</span>
         </Link>
 
-        <Button asChild size="lg" className="bg-primary hover:bg-primary/90 gap-2">
-          <a href="https://play.google.com/store/apps/details?id=com.smarthomeai.app" target="_blank" rel="noopener noreferrer">
-            <img src={googlePlayIcon} alt="Google Play" className="h-5 w-5" />
-            Get on Google Play
-          </a>
-        </Button>
+        <div className="flex gap-2">
+          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 gap-2">
+            <a href="https://play.google.com/store/apps/details?id=com.smarthomeai.app" target="_blank" rel="noopener noreferrer">
+              <img src={googlePlayIcon} alt="Google Play" className="h-5 w-5" />
+              <span className="hidden md:inline">Get on Google Play</span>
+              <span className="md:hidden">Google Play</span>
+            </a>
+          </Button>
+
+          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 gap-2">
+            <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+              <img src={appStoreIcon} alt="App Store" className="h-5 w-5" />
+              <span className="hidden md:inline">Get on App Store</span>
+              <span className="md:hidden">App Store</span>
+            </a>
+          </Button>
+        </div>
       </div>
     </header>
   );
