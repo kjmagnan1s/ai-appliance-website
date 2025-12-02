@@ -123,10 +123,28 @@ All colors MUST be HSL.
   }
 }
 
+/* Scrolling testimonials animation */
+@keyframes scroll-testimonials {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .animate-pan-image {
   animation: pan-image 60s linear infinite;
 }
 
 .animate-float {
   animation: float 3s ease-in-out infinite;
+}
+
+.animate-scroll-testimonials {
+  animation: scroll-testimonials 60s linear infinite;
+}
+
+.animate-scroll-testimonials:hover {
+  animation-play-state: paused;
 }
