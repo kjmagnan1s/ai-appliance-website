@@ -1,79 +1,87 @@
+/* Google Fonts - DM Serif Display + DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=DM+Serif+Display&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
 All colors MUST be HSL.
+Aesthetic: Warm & Approachable - "Trusted Home Expert"
 */
 
 @layer base {
   :root {
-    --background: 200 100% 97%;
-    --foreground: 215 25% 12%;
+    /* Warm cream background instead of cold blue */
+    --background: 45 30% 97%;
+    --foreground: 220 25% 12%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 12%;
+    --card: 45 40% 99%;
+    --card-foreground: 220 25% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 12%;
+    --popover: 45 40% 99%;
+    --popover-foreground: 220 25% 12%;
 
-    --primary: 217 91% 60%;
+    /* Forest green - trust, stability, home */
+    --primary: 158 64% 32%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 174 72% 56%;
+    /* Amber - action, energy, CTAs */
+    --secondary: 38 92% 50%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 215 16% 47%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 220 14% 46%;
+    --muted-foreground: 220 14% 46%;
 
-    --accent: 174 72% 56%;
+    /* Amber accent for highlights */
+    --accent: 38 92% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 217 91% 60%;
+    --border: 45 20% 88%;
+    --input: 45 20% 88%;
+    --ring: 158 64% 32%;
 
     --radius: 0.75rem;
-    
-    /* Custom gradient stops */
-    --gradient-from: 199 100% 94%;
-    --gradient-to: 174 72% 90%;
-    
+
+    /* Custom gradient stops - warm tones */
+    --gradient-from: 45 30% 97%;
+    --gradient-to: 45 25% 94%;
+
     /* Transitions */
     --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: 215 28% 10%;
-    --foreground: 210 40% 98%;
+    --background: 220 20% 10%;
+    --foreground: 45 30% 98%;
 
-    --card: 215 28% 15%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 20% 14%;
+    --card-foreground: 45 30% 98%;
 
-    --popover: 215 28% 15%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 20% 14%;
+    --popover-foreground: 45 30% 98%;
 
-    --primary: 217 91% 60%;
+    --primary: 158 64% 42%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 174 72% 56%;
+    --secondary: 38 92% 55%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 215 20% 65%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 220 14% 60%;
+    --muted-foreground: 220 14% 60%;
 
-    --accent: 174 72% 56%;
+    --accent: 38 92% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 45 30% 98%;
 
-    --border: 215 28% 20%;
-    --input: 215 28% 20%;
-    --ring: 217 91% 60%;
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 158 64% 42%;
   }
 }
 
@@ -83,22 +91,24 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-gradient-to-br from-[hsl(var(--gradient-from))] to-[hsl(var(--gradient-to))] text-foreground font-sans antialiased;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    @apply bg-gradient-to-br from-[hsl(var(--gradient-from))] to-[hsl(var(--gradient-to))] text-foreground antialiased;
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
-    @apply text-foreground font-semibold;
+    @apply text-foreground;
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-weight: 400;
   }
-  
+
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl;
+    @apply text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.1];
   }
-  
+
   h2 {
-    @apply text-3xl md:text-4xl lg:text-5xl;
+    @apply text-3xl md:text-4xl lg:text-5xl tracking-tight;
   }
-  
+
   h3 {
     @apply text-xl md:text-2xl;
   }

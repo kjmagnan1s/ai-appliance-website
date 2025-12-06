@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.jpeg";
-import googlePlayBadge from "@/assets/google-play-badge.png";
-import appStoreBadge from "@/assets/app-store-badge.png";
+import { Download } from "lucide-react";
 
 const Header = () => {
   return (
@@ -9,18 +8,16 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
           <img src={logo} alt="AIppliance Manager Logo" className="h-10 w-10 rounded-lg" />
-          <span className="text-lg font-bold">AIppliance Manager</span>
+          <span className="text-lg font-semibold" style={{ fontFamily: "'DM Sans', system-ui, sans-serif" }}>AIppliance Manager</span>
         </Link>
 
-        <div className="flex gap-2 items-center">
-          <a href="https://play.google.com/store/apps/details?id=com.smarthomeai.app" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-            <img src={googlePlayBadge} alt="Get it on Google Play" className="h-10" />
-          </a>
-
-          <a href="https://apps.apple.com/app/aippliance-manager/id6738828940" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-            <img src={appStoreBadge} alt="Download on the App Store" className="h-10" />
-          </a>
-        </div>
+        <a
+          href="#download"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-primary-foreground font-medium text-sm hover:bg-primary/90 transition-colors"
+        >
+          <Download className="w-4 h-4" />
+          Download Free
+        </a>
       </div>
     </header>
   );
