@@ -117,10 +117,10 @@ Aesthetic: Warm & Approachable - "Trusted Home Expert"
 /* Custom animations for the Hero component */
 @keyframes pan-image {
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
@@ -135,6 +135,10 @@ Aesthetic: Warm & Approachable - "Trusted Home Expert"
 
 .animate-pan-image {
   animation: pan-image 60s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  perspective: 1000px;
 }
 
 .animate-float {
