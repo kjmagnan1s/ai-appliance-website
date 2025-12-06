@@ -19,7 +19,7 @@ const Header = () => {
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
           >
-            <img src={googlePlayBadge} alt="Get it on Google Play" className="h-10" />
+            <img src={googlePlayBadge} alt="Get it on Google Play" className="h-8 sm:h-10 w-auto object-contain" />
           </a>
 
           <a
@@ -28,7 +28,7 @@ const Header = () => {
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
           >
-            <img src={appStoreBadge} alt="Download on the App Store" className="h-10" />
+            <img src={appStoreBadge} alt="Download on the App Store" className="h-8 sm:h-10 w-auto object-contain" />
           </a>
         </div>
       </div>
