@@ -1,7 +1,7 @@
 import screenshotChat from "@/assets/screenshot-chat.png";
 import googlePlayBadge from "@/assets/google-play-badge.png";
 import appStoreBadge from "@/assets/app-store-badge.png";
-import { Star, Shield, Lock } from 'lucide-react';
+import { Star, Shield } from 'lucide-react';
 
 const Hero = () => {
   // Panning background image
@@ -109,16 +109,13 @@ const Hero = () => {
                 <span className="font-semibold text-foreground text-lg">1,000+</span> downloads
               </span>
               <span className="w-px h-5 bg-border hidden sm:block" />
-              <span className="font-semibold text-foreground text-lg">Free</span>
+              <span className="font-semibold text-foreground text-lg">Free to Download</span>
             </div>
 
-            {/* Trust Badges - BIGGER */}
+            {/* Trust Badge */}
             <div className="flex flex-wrap items-center gap-5 justify-center lg:justify-start text-sm text-muted-foreground">
               <span className="flex items-center gap-2">
                 <Shield className="w-4 h-4" /> No credit card required
-              </span>
-              <span className="flex items-center gap-2">
-                <Lock className="w-4 h-4" /> Privacy first
               </span>
             </div>
           </div>

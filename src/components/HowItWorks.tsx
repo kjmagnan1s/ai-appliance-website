@@ -21,25 +21,25 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="container px-4 py-20 md:px-6">
-      <div className="mx-auto max-w-5xl">
-        <h2 className="mb-12 text-center">
+    <section className="container px-6 py-24 md:px-8 lg:py-32">
+      <div className="mx-auto max-w-6xl">
+        <h2 className="mb-16 text-center text-4xl md:text-5xl lg:text-6xl">
           Effortless Appliance Care in Three Steps.
         </h2>
-        
-        <div className="grid gap-8 md:grid-cols-3">
+
+        <div className="grid gap-10 md:grid-cols-3">
           {steps.map((step, index) => (
-            <Card 
-              key={index} 
-              className="border-border/50 bg-card/50 backdrop-blur-sm hover:shadow-lg transition-shadow animate-fade-in"
+            <Card
+              key={index}
+              className="border-border/50 bg-card/50 backdrop-blur-sm hover:shadow-xl transition-shadow animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <CardContent className="pt-8 text-center">
-                <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                  <step.icon className="h-8 w-8 text-primary" />
+              <CardContent className="pt-10 pb-8 text-center px-8">
+                <div className="mb-6 inline-flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
+                  <step.icon className="h-10 w-10 text-primary" />
                 </div>
-                <h3 className="mb-3">{step.title}</h3>
-                <p className="text-muted-foreground">{step.description}</p>
+                <h3 className="mb-4 text-2xl md:text-3xl">{step.title}</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">{step.description}</p>
               </CardContent>
             </Card>
           ))}
