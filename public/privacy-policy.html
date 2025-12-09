@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - AIppliance Manager</title>
+  <meta name="description" content="Privacy Policy for AIppliance Manager - Learn how we collect, use, and protect your data." />
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/logo-16x16.png" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --background: hsl(45, 30%, 97%);
+      --foreground: hsl(220, 25%, 12%);
+      --muted: hsl(220, 14%, 46%);
+      --primary: hsl(158, 64%, 32%);
+      --border: hsl(45, 20%, 88%);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+      background: linear-gradient(to bottom right, var(--background), hsl(45, 25%, 94%));
+      color: var(--foreground);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+      z-index: 50;
+    }
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--foreground);
+    }
+    .logo-link img {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+    }
+    .logo-text {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 1.25rem;
+    }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--muted);
+      text-decoration: none;
+      margin-bottom: 1.5rem;
+      font-size: 0.875rem;
+    }
+    .back-link:hover { color: var(--foreground); }
+    h1 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: var(--foreground);
+    }
+    p, li { color: var(--muted); margin-bottom: 0.75rem; }
+    strong { color: var(--foreground); }
+    a { color: var(--foreground); }
+    ul, ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+    li { margin-bottom: 0.5rem; }
+    section { margin-bottom: 2rem; }
+    .meta { margin-bottom: 2rem; }
+    .meta p { margin-bottom: 0.25rem; }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="/" class="logo-link">
+        <img src="/logo-32x32.png" alt="AIppliance Manager Logo" />
+        <span class="logo-text">AIppliance Manager</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <a href="/" class="back-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+      Back to Home
+    </a>
+
+    <h1>Privacy Policy</h1>
+
+    <div class="meta">
+      <p><strong>Effective date:</strong> October 8, 2025</p>
+      <p><strong>Application:</strong> AIppliance Manager (com.smarthomeai.app)</p>
+      <p><strong>Company:</strong> AIpplianceManager.com ("we," "our," "us")</p>
+    </div>
+
+    <section>
+      <h2>1. Overview</h2>
+      <p>AIppliance Manager helps you organize household appliances, locate manuals, and ask AI-powered questions about them. We collect only the information needed to provide these features and we never sell your data to third parties.</p>
+    </section>
+
+    <section>
+      <h2>2. Information We Collect</h2>
+      <ol>
+        <li>
+          <p><strong>Account Information</strong></p>
+          <ul>
+            <li>Email address and authentication data provided through our secure cloud database provider.</li>
+            <li>Used to create and secure your account.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Appliance Records</strong></p>
+          <ul>
+            <li>Appliance details that you add (brand, model, nickname, room).</li>
+            <li>Stored securely so the app can show your inventory across devices.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Camera Access &amp; Images</strong></p>
+          <ul>
+            <li>When you choose to scan an appliance label, we request camera permission.</li>
+            <li>The image is processed locally, then sent to a secure cloud function to extract text (brand, model, serial number).</li>
+            <li>Images are held temporarily for processing (currently up to 90 days for troubleshooting) and then deleted. We do not access the camera in the background or capture footage without your explicit action.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Manual Uploads &amp; Files</strong></p>
+          <ul>
+            <li>PDFs you upload are stored in encrypted cloud storage so you can retrieve manuals within the app and use AI question-answering.</li>
+            <li>We may compute quality metrics (e.g., completeness score) to ensure the best manual is available.</li>
+            <li>Delete your manual and related appliance to remove stored files.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Notifications</strong></p>
+          <ul>
+            <li>If you allow notifications, we store a device token to send alerts when manuals are found or action is needed.</li>
+            <li>Tokens are managed by a third-party notification service provider; they can be invalidated anytime from your device settings.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Usage Data</strong></p>
+          <ul>
+            <li>Basic analytics (screen views, feature usage, errors) to improve the product.</li>
+            <li>We do not track your location or contacts.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>3. How We Use Your Data</h2>
+      <ul>
+        <li>Provide core features: appliance storage, manual retrieval, AI Q&amp;A.</li>
+        <li>Send optional status notifications (manual found, upload required, etc.).</li>
+        <li>Improve reliability and understand feature usage (aggregated analytics).</li>
+        <li>Respond to support requests and fix bugs.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Data Sharing</h2>
+      <p>We do not sell or rent your information. We share data only with:</p>
+      <ul>
+        <li><strong>Service Providers:</strong> obligated to safeguard your information (e.g., cloud database, storage, notification services).</li>
+        <li><strong>Legal Authorities:</strong> when required by law or to protect safety.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Data Retention &amp; Deletion</h2>
+      <ul>
+        <li>Appliance records and manuals remain until you delete them.</li>
+        <li>Camera uploads for label scanning are retained up to 90 days for debugging and then automatically purged.</li>
+        <li>To delete your account and all associated data, email <a href="mailto:privacy@AIpplianceManager.com">privacy@AIpplianceManager.com</a> or use any in-app deletion option (when available).</li>
+        <li>Manual deletion removes the file and related AI embeddings.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Your Choices</h2>
+      <ul>
+        <li>Revoke camera access via device settings; you can still add appliances manually.</li>
+        <li>Manage push notification permissions in Android/iOS settings.</li>
+        <li>Edit or delete appliances, manuals, and label scans in the app.</li>
+        <li>Contact us to export or erase your data.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Security</h2>
+      <p>We rely on modern cloud infrastructure with encryption in transit and at rest. Access to production data is restricted to authorized team members who require it to maintain or support the service.</p>
+    </section>
+
+    <section>
+      <h2>8. Children's Privacy</h2>
+      <p>AIppliance Manager is intended for household management and is not directed at children under 13. We do not knowingly collect data from children.</p>
+    </section>
+
+    <section>
+      <h2>9. Updates to This Policy</h2>
+      <p>We may update this policy to reflect changes in the app or legal requirements. Updates will be posted on this page with a new "Effective date." If changes are significant, we'll notify you via the app or email.</p>
+    </section>
+
+    <section>
+      <h2>10. Contact Us</h2>
+      <p>For support, privacy questions, or data deletion requests, email <a href="mailto:privacy@AIpplianceManager.com">privacy@AIpplianceManager.com</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AIppliance Manager. All rights reserved.</p>
+  </footer>
+</body>
+</html>
