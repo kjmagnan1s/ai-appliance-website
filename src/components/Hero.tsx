@@ -81,7 +81,7 @@ const Hero = () => {
 
               {/* App Store Badge */}
               <a
-                href="https://apps.apple.com/app/aippliance-manager/id6738828940"
+                href="https://apps.apple.com/us/app/aippliance-manager/id6754003121"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative"
